@@ -36,6 +36,9 @@
     <ClCompile Include="src\helloengine_win.c">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\helloengine_d2d.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApplication.hpp">
