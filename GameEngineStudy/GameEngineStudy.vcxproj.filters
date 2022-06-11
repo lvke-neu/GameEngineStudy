@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{44ae4ccc-132e-4184-b8b5-926949092b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Common">
+      <UniqueIdentifier>{eadd7b74-cc73-40b5-bc6a-d17f1f6a1b2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Interface">
+      <UniqueIdentifier>{74a4ac26-27d1-4dc0-ae45-7ccffdc49da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Empty">
+      <UniqueIdentifier>{f12797ae-39a3-416b-bf72-dead13d1ec50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{fb2e3439-a4f2-4003-9714-e211a93ac4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{e47cd831-d0b4-4f8c-a344-a1f685c60b18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BaseApplication.cpp">
+      <Filter>Framework\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Framework\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GraphicsManager.cpp">
+      <Filter>Framework\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EmptyApplication.cpp">
+      <Filter>Empty</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helloengine_win.c">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BaseApplication.hpp">
+      <Filter>Framework\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IApplication.hpp">
+      <Filter>Framework\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Interface.hpp">
+      <Filter>Framework\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IRuntimeModule.hpp">
+      <Filter>Framework\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GraphicsManager.hpp">
+      <Filter>Framework\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
