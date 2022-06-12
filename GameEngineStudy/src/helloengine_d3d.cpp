@@ -77,8 +77,8 @@ void InitPipeline()
 
 	ID3DBlob *VS, *PS;
 
-	D3DReadFileToBlob(L"src\\HLSL\\vs.cso", &VS);
-	D3DReadFileToBlob(L"src\\HLSL\\ps.cso", &PS);
+	D3DReadFileToBlob(L"shader/vs.cso", &VS);
+	D3DReadFileToBlob(L"shader/ps.cso", &PS);
 
 	g_pDev->CreateVertexShader(VS->GetBufferPointer(), VS->GetBufferSize(), NULL, &g_pVS);
 	g_pDev->CreatePixelShader(PS->GetBufferPointer(), PS->GetBufferSize(), NULL, &g_pPS);

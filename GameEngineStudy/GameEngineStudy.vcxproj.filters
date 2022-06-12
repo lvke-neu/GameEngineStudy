@@ -62,12 +62,12 @@
     <ClInclude Include="src\GraphicsManager.hpp">
       <Filter>Framework\Common</Filter>
     </ClInclude>
-    <ClInclude Include="src\HLSL\cbuffer.h">
-      <Filter>Platform\Windows\HLSL</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\HLSL\vsoutput.hlsl">
+      <Filter>Platform\Windows\HLSL</Filter>
+    </None>
+    <None Include="src\HLSL\cbuffer.hlsl">
       <Filter>Platform\Windows\HLSL</Filter>
     </None>
   </ItemGroup>
