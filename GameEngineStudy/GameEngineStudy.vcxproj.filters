@@ -19,6 +19,9 @@
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{e47cd831-d0b4-4f8c-a344-a1f685c60b18}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\Windows\HLSL">
+      <UniqueIdentifier>{1c4095c9-69ad-445d-8952-c9d13b6b61b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\BaseApplication.cpp">
@@ -39,6 +42,9 @@
     <ClCompile Include="src\helloengine_d2d.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\helloengine_d3d.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApplication.hpp">
@@ -56,5 +62,21 @@
     <ClInclude Include="src\GraphicsManager.hpp">
       <Filter>Framework\Common</Filter>
     </ClInclude>
+    <ClInclude Include="src\HLSL\cbuffer.h">
+      <Filter>Platform\Windows\HLSL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\HLSL\vsoutput.hlsl">
+      <Filter>Platform\Windows\HLSL</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="src\HLSL\ps.hlsl">
+      <Filter>Platform\Windows\HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="src\HLSL\vs.hlsl">
+      <Filter>Platform\Windows\HLSL</Filter>
+    </FxCompile>
   </ItemGroup>
 </Project>
