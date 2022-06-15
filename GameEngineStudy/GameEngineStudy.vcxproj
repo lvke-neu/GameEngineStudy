@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Allocator.cpp" />
     <ClCompile Include="src\BaseApplication.cpp" />
     <ClCompile Include="src\GraphicsManager.cpp" />
     <ClCompile Include="src\helloengine_d2d.cpp" />
@@ -26,10 +27,13 @@
     <ClCompile Include="src\helloengine_win.c" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\EmptyApplication.cpp" />
+    <ClCompile Include="src\MemoryManager .cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Allocator.hpp" />
     <ClInclude Include="src\BaseApplication.hpp" />
     <ClInclude Include="src\GraphicsManager.hpp" />
+    <ClInclude Include="src\MemoryManager.hpp" />
     <None Include="src\HLSL\cbuffer.hlsl" />
     <ClInclude Include="src\IApplication.hpp" />
     <ClInclude Include="src\Interface.hpp" />
@@ -169,7 +173,8 @@ xcopy /E shader $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\s
       <ShaderModel>5.0</ShaderModel>
     </FxCompile>
     <PostBuildEvent>
-      <Command>mkdir $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader
+      <Command>rd /s /q $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader
+mkdir $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader
 xcopy /E shader $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -215,7 +220,8 @@ xcopy /E shader $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\s
       <ShaderModel>5.0</ShaderModel>
     </FxCompile>
     <PostBuildEvent>
-      <Command>mkdir $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader
+      <Command>rd /s /q $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader
+mkdir $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader
 xcopy /E shader $(SolutionDir)\$(ProjectName)\bin\$(Platform)\$(Configuration)\shader</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>

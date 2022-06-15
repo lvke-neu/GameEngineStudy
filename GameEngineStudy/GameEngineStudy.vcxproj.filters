@@ -45,6 +45,12 @@
     <ClCompile Include="src\helloengine_d3d.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Allocator.cpp">
+      <Filter>Framework\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MemoryManager .cpp">
+      <Filter>Framework\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BaseApplication.hpp">
@@ -60,6 +66,12 @@
       <Filter>Framework\Interface</Filter>
     </ClInclude>
     <ClInclude Include="src\GraphicsManager.hpp">
+      <Filter>Framework\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Allocator.hpp">
+      <Filter>Framework\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemoryManager.hpp">
       <Filter>Framework\Common</Filter>
     </ClInclude>
   </ItemGroup>

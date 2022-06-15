@@ -3,7 +3,7 @@
 
 namespace My
 {
-	class BaseApplication : implemnts IApplication
+	class BaseApplication : implements IApplication
 	{
 	public:
 		virtual int Initialize();

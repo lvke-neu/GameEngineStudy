@@ -4,7 +4,7 @@
 
 namespace My
 {
-	Interface IApplication : implemnts IRuntimeModule
+	Interface IApplication : implements IRuntimeModule
 	{
 	public:
 		virtual int Initialize() = 0;

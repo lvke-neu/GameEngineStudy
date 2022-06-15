@@ -1,3 +1,3 @@
 #pragma once
 #define Interface class
-#define implemnts public
+#define implements public
